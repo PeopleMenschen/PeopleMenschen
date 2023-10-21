@@ -1,0 +1,112 @@
+
+/*--- header ---*/
+.header-container{
+     position: sticky;
+     top: 0;
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     height: auto;
+     background-color: var(--h-background-color);
+     padding: 0 50px;
+     z-index: 100;
+}
+.header-container .header{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style: none;
+     font-size: var(--m);
+     margin: auto;
+     flex-wrap: wrap;
+}
+.header-container .header li{
+     margin: 0 20px;
+     padding: 3px;
+     border-radius: 3px;
+     transition: all 0.4s ease-in-out;
+}
+.header-container .header li a{
+     color: var(--h-text-color);
+
+}
+.header-container .header .menu_icon{
+     visibility: hidden;
+     
+}
+.header-container .menu_icon{
+     color: var(--h-text-color);
+     padding: 3px;
+     border-radius: 3px;
+     transition: all 0.4s ease-in-out;
+     margin: auto;
+     visibility: hidden; 
+     /*-- display: none; --*/     /* this is problime */
+}
+
+/* .logo{
+     position: absolute;
+     width: 46px;
+     height: 46px;
+     align-items: center;
+     border: dotted 1px var(--h-text-color);
+     border-radius: 50%;
+} */
+
+/*--- header hover ---*/
+.header-container .header li:hover{
+     background-color: var(--h-hover-color);
+}
+.header-container .menu_icon:hover{
+     background-color: var(--h-hover-color);
+}
+
+/*--- footer ---*/
+.footer-container{
+     width: 100%;
+     height: auto;
+     flex-wrap: wrap;
+     background-color: var(--f-background-color);
+     padding: 30px 0;
+     
+}
+.content{
+     display: flex;
+     flex-direction: row;
+     margin: 50px;
+     justify-content: space-between;
+}
+.footer-container h2{
+     color: var(--f-text-color);
+     border-bottom:  dotted 1px var(--f-text-color);
+     margin: 20px 0;
+     display: inline;
+     padding-bottom: 3px;
+}
+.footer-container .section{
+     margin-bottom: auto;
+}
+.footer-container .section li{
+     list-style: none;
+     margin: 15px 0;
+     font-size: var(--m);
+}
+.footer-container .section li a{
+     color: var( --f-text-color);
+     padding: 3px;
+     border-radius: 3px;
+     transition: all 0.4s ease-in-out;
+}
+     
+/*--- footer hover---*/
+.footer-container .section li a:hover{
+     background-color: var(  --f-hover-color);
+
+}
+/*--- footer copyright---*/
+.copyright{
+     color: var(--f-text-color);
+     text-align: center;
+     padding: 5px 0;
+     border-top: dotted 1px var(--f-text-color);
+}
