@@ -1,0 +1,86 @@
+/*--- main body ---*/
+.container{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     
+}
+.container .header{
+     display: flex;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+     width: 100%;
+     justify-content: space-around;
+     align-items: center;
+     background-color: var(--header-b);
+     color: var(--header-t);
+     padding: 5px 50px;
+     flex-wrap: wrap;
+}
+
+.container .logo{
+     justify-items: start;
+     align-items: center;
+     flex-grow: 2;
+}
+.container .logo h1{
+     color: var(--section-b);
+}
+.container .nave{
+     flex-grow: 6;
+     
+}
+.container .nave .checkbtn{
+     color: var(--header-t);
+     border-radius: 3px;
+     padding: 3px;
+     cursor: pointer;
+     transition: all 0.3s ease-in-out;
+     display: none;
+}
+.container .nave #check{
+     display: none;
+}
+.container .nave ul{
+     list-style: none;
+     display: flex;
+     flex-wrap: wrap;
+}
+.container .nave ul li{
+     margin: 6px;
+     
+}
+.container .nave ul li a{
+     color: var(--header-t);
+     border-radius: 3px;
+     padding: 3px;
+     transition: all 0.3s ease-in-out;
+}
+.container .sigup{
+     flex-grow: 1;
+     list-style: none;
+     display: flex;
+}
+.container .sigup li{
+     margin: 0 8px;
+}
+.container .sigup li a{
+     color: var(--header-t);
+     border-radius: 3px;
+     padding: 3px;
+     transition: all 0.3s ease-in-out;
+}
+
+/*--- hover ---*/
+.container .nave ul li a:hover{
+     background-color: var(--header-h);
+}
+.container .sigup li a:hover{
+     background-color: var(--alternative-b);
+}
+.container .nave .checkbtn:hover{
+     background-color: var(--header-h);
+
+}

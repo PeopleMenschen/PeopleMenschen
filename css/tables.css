@@ -1,0 +1,18 @@
+/*------------ section ------------*/
+.section table{
+     margin: 20px 0;
+}
+.section table,th,td{
+     border-collapse: collapse;
+     border: solid 1px black;
+     padding: 2px 3px;
+     cursor: context-menu;
+}
+table thead{
+     background-color: rgb(191, 255, 0);
+}
+/*------------ hover section ------------*/
+table thead:hover{
+     background-color: rgba(128, 255, 37, 0.825);
+     transition: all 0.4s ease-in-out;
+}

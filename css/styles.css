@@ -1,0 +1,78 @@
+/*----- styles connecting -----*/
+@import url(header.css);
+@import url(main.css);
+@import url(tables.css);
+@import url(media_query.css);
+@import url(footer.css);
+
+/*----- fonts -----*/
+@font-face {
+     font-family: 'openSans';
+     font-style: normal;
+     font-weight: 400;
+     font-display: block;
+     src: url(../fonts/OpenSans.ttf) format('ttf');
+   }
+   /* fallback */
+   @font-face {
+     font-family: 'yakanFarsi';
+     font-style: normal;
+     font-weight: 100 700;
+     font-display: block;
+     src: url(../fonts/Yekan.ttf) format('ttf');
+   }
+
+/* @import url('../fonts/OpenSans.ttf');
+@import url('../fonts/Yekan.ttf'); */
+
+/*----- style of genarall -----*/
+*{
+     padding: 0;
+     margin: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+     letter-spacing: 1px;
+     word-spacing: 2px;
+     scroll-behavior: smooth;
+     font-family: openSans, sans-serif, yakanFarsi;
+}
+
+/*----- colors -----*/
+:root{
+     /*-- colors for header --*/
+     --header-b: rgb(25,25,25);
+     --header-t: rgb(226, 226, 226);
+     --header-h: rgb(80, 80, 80);
+     /*-- colors for main body --*/
+     --body-b: rgb(240,240,240);
+     --body-t: rgb(50,50,50);
+     --body-h: rgb(205,205,205);
+     /*-- colors for footer --*/
+     --footer-b: rgb(77,0,57);
+     --footer-t: rgb(255, 203, 248);
+     --footer-h: rgb(120,0,95);
+
+     /*-- First alternative colors --*/
+    --alternative-b: rgb(0,120,45);
+    --alternative-t: rgb(212, 255, 224);
+    --alternative-h: rgb(0, 145, 45);
+
+     /*-- Secend alternative colors --*/
+    --section-b: rgb(0, 180, 210);
+    --section-t: rgb(0, 20, 22);
+    --section-h: rgb(0, 210, 205);
+}
+
+/*----- font size -----*/
+:root{
+     --s: 10px;
+     --m: 20px;
+     --l: 30px;
+     --xl: 40px;
+}
+.active1{
+     border-bottom: solid 3px var(--header-t);
+}
+/* .active2{
+     border-bottom: solid 3px var(--section-t);
+} */

@@ -1,0 +1,172 @@
+.container .main{
+     display: flex;
+     width: 70%;
+     margin: auto;
+     flex-wrap: wrap;
+}
+/*--- body head ---*/
+.container .body_head{
+     position: sticky;
+     top: 46px;
+     width: 100%;
+     padding: 0 50px;
+     align-items: center;
+     background-color: var(--section-b);
+}
+.main .slider{
+     width: 100%;
+     margin: 10px 0;
+     border-radius: 5px;
+     background-color: var(--alternative-t);
+}
+.main .slider .photos{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+}
+.main .slider .photos img{
+     width: 20rem;
+     height: 20rem;
+     border-radius: 5px;
+     margin: 5px;
+}
+.main .first_section{
+     border-radius: 5px;
+     margin-bottom: 10px;
+     padding: 20px;
+     background-color: var(--alternative-t);
+     color: var(--section-t);
+     font-size: var(--m);
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+}
+.container .body_head .nave ul li{
+     margin: 6px;
+     cursor: pointer;
+     font-size: var(--m);
+     display: inline;
+}
+.container .body_head .nave ul li a{
+     color: var(--section-t);
+     padding: 3px;
+     border-radius: 3px;
+     transition: all 0.3s ease-in-out;
+}
+/*--- sections ---*/
+.main .section{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     background-color: var(--alternative-t);
+     width: 100%;
+     padding: 20px;
+     flex-wrap: wrap;
+     font-size: var(--m);
+     margin-bottom: 10px;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+     
+}
+/*--- first section ---*/
+.main .section .photos{
+     display: flex;
+     width: 50%;
+}
+.main .section .photos img{
+     width: 100%;
+     padding: 5px;
+     border-radius: 5px;
+}
+
+.main .first_section img{
+     width: 20%;
+     border-radius: 5px;
+}
+
+/*--- accordion section ---*/
+.section details{
+     display: flex;
+     width: 100%;
+}
+.section details ul li{
+     padding: 10px;
+     margin-left: 30px;
+}
+.section details summary{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: orange;
+     padding: 5px 25px;
+     margin-bottom: 15px;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: all 0.4s ease-in-out;
+}
+.section details summary:open{
+     background-color: blueviolet;
+}
+.section .content{
+     padding: 10px 0;
+     overflow: hidden;
+     transition: all 1s ease-in-out;
+}
+/*--- accordion hover ---*/
+.section details summary:hover{
+     background-color: rgb(255, 192, 75);
+}
+
+/*--- article section ---*/
+.main .section article{
+     width: 100%;
+     flex-wrap: wrap;
+}
+.main .my_section img{
+     width: 20%;
+     border-radius: 5px;
+}
+/*-- hovers --*/
+.container .body_head .nave ul li a:hover{
+     background-color: var(--section-h);
+}
+.my_section{
+     /* display: flex; */
+     background-color: orange;
+     padding: 20px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     font-size: var(--m);
+}
+/* accordion button */
+.accordion {
+     width: 70%;
+     margin: auto;
+}
+.main,h2,h3,p{
+     margin-bottom: 10px;
+}
+.accordion-input{
+     display: none;
+}
+.accordion-button{
+     width: 100%;
+     padding: 5px;
+     background-color: blueviolet;
+     border-radius: 5px;
+     cursor: pointer;
+}
+.accordion-content{
+     display: none;
+}
+
+/* Style for checkbox label when checked   */
+.accordion-input:checked + .accordion-button {
+     background-color: var(--section-b);
+ }
+
+.accordion-input:checked + .accordion-button + .accordion-content {
+     display: block;
+ } 
+
+ 
